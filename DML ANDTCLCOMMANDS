@@ -1,12 +1,17 @@
-CREATE TABLE Students(student_id INT,student_name VARCHAR(20),department VARCHAR(20),age INT);
+CREATETABLEStudents(
+student_id INT,
+student_name VARCHAR(20),
+department VARCHAR(20),
+age INT
+);
 insert into Students values(1,’ajith’,’bsc’,20);
 insert into Students values(2,’abinaya’,’bsc’,20);
 insert into Students values(3,’deva’,’bcom’,19);
 insert into Students values(4,’kaviya’,’bca’,20);
 select *FROM Students;
-ALTER TABLE Students ADD MARKS INT;
-UPDATE Students SET MARKS=100;
-SELECT *FROM Students;
+ALTERTABLEStudents ADD MARKSINT;
+UPDATEStudents SET MARKS=100;
+SELECT *FROMStudents;
 commit;
 delete from Students where student_id=1;
 select *FROM Students;
